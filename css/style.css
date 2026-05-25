@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'kurland';
+    src: url('../fonts/Kurland-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sano';
+    src: url('../fonts/SANoRules.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +38,16 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'sano', sans-serif;
+}
+
+.hero h1,
+.page-banner h1,
+.logo span {
+    font-family: 'kurland', serif;
 }
 
 body {
