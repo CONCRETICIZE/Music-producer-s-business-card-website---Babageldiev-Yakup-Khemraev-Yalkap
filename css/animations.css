@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a, button, img, .portfolio-card, .review-card, .skill-card {
+  transition: transform .35s ease, opacity .35s ease, box-shadow .35s ease, background .35s ease, border-color .35s ease;
+}
+
+.header--scrolled {
+  background: rgba(10, 12, 20, 0.78);
+  backdrop-filter: blur(14px);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main-btn:hover,
+.secondary-btn:hover,
+.header-btn:hover,
+.portfolio-btn:hover {
+  transform: translateY(-3px);
+}
+
+.portfolio-card:hover img,
+.review-card:hover,
+.skill-card:hover {
+  transform: scale(1.02);
+}
